@@ -15,6 +15,7 @@ function Layout(props) {
 const MainContainer = styled.div`
     display: flex;
     height: calc(100vh - 55px);
+    max-width: 100vw;
     overflow-y: scroll;
     @media (max-width: 768px) {
         .left-column,
@@ -33,14 +34,14 @@ const LeftCol = styled.div`
     padding: 20px;
 `
 const CenterCol = styled.div`
+    position: relative;
     flex: 3;
     background-color: #e0e0e0;
     padding: 20px;
 `
 const RightCol = styled.div`
     flex: 1;
-    background-color: #f0f0f0;
-    padding: 0px;
+    background-color: ${(props) => props.theme === "dark" ? "#1B1D1D" : "#fff"};
 `
 
 export default Layout;

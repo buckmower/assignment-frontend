@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import NavBar from "./components/navbar"
+import NavBar from "./components/navbar-responsive"
 import './assets/fontawesome/fontawesome.min.js';
 import './assets/fontawesome/solid.min.js';
 import Layout from "./components/Layout";

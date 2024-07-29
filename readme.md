@@ -6,6 +6,7 @@ Please submit your code by creating a public GitHub repository. Ensure that your
 
 ## How to Run this Project
 - Clone the repo
+- cd stonks
 - npm install
 - npm run dev
 

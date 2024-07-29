@@ -122,7 +122,7 @@ const StreamChatComponent = (props) => {
         const newInput = parts.join('@') + '@' + user + ' ';
         setInput(newInput);
         setShowAutocomplete(false);
-        inputRef.current.focus();
+        inputRef && inputRef.current && inputRef.current.focus();
       };
 
     const handleCommandClick = (command) => {
